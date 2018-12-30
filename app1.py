@@ -27,4 +27,9 @@ def definition(word):
 
 word = input("Enter word: ")
 output = definition(word)
-print(definition(word))
+
+if type(output) == list:
+    for item in output:
+        print(item)
+else:
+    print(output)
