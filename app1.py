@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Dec 28 01:53:50 2018
 
-@author: lenovo
-"""
 import json
 from difflib import get_close_matches #method to campare sequences
 
@@ -13,6 +9,8 @@ def definition(word):
     word = word.lower()
     if word in data:
         return data[word]
+    elif word.title() in data:
+        return data[word.title()] #check for proper names
     elif len(get_close_matches(word, data.keys(), cutoff=0.7)) > 0:
         yn = input("Did you mean %s instead? Enter Y or N: " %get_close_matches(word, data.keys(), cutoff = 0.7)[0])
         if yn == "Y":
