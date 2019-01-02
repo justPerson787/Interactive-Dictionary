@@ -11,6 +11,8 @@ def definition(word):
         return data[word]
     elif word.title() in data:
         return data[word.title()] #check for proper names
+    elif word.upper() in data:
+        return data[word.upper()]#check for abbreviationslike USA
     elif len(get_close_matches(word, data.keys(), cutoff=0.7)) > 0:
         yn = input("Did you mean %s instead? Enter Y or N: " %get_close_matches(word, data.keys(), cutoff = 0.7)[0])
         if yn == "Y":
