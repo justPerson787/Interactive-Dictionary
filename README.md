@@ -1,5 +1,5 @@
 # Interactive-Dictionary
-This is a simple interactive dictionary that provides definition for a word suggested by a user.
+This is an interactive dictionary that provides definition for a word suggested by a user.
 The program handles abbreviations and proper nouns as well. 
 For mistyped word the program suggests possible corrections.
 
