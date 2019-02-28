@@ -4,3 +4,5 @@ The program handles abbreviations and proper nouns as well.
 For mistyped word the program suggests possible corrections.
 
 To start application run app1.py file in your command line.
+
+The program has been created by following Udemy course https://www.udemy.com/the-python-mega-course.
